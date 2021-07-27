@@ -1,0 +1,111 @@
+/** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 1rem;
+	background-color: #f4f3f3;
+}
+
+header {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2c5364;
+	letter-spacing: 1px;
+	margin-bottom: 1.5rem;
+}
+
+input {
+	font-size: 1.2rem;
+	padding: 0.3rem;
+	border-radius: 50px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.output {
+	margin: 1.3rem 0;
+	font-size: 1.1rem;
+}
+
+#cElement {
+	background: #0f2027; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+	width: 50%;
+	font-size: 1rem;
+	position: relative;
+	border: 1px solid black;
+	overflow: hidden;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+/* it needs the specificity  */
+
+#cElement #sElement {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 1rem;
+}
+
+#sElement ul {
+	list-style: none;
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+#sElement p {
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+}
+
+button {
+	font-size: 1.3rem;
+	padding: 0.3rem 2.5rem;
+	margin: 1.8rem 0 0;
+	background-color: #2c5364;
+	color: #fff;
+	border-radius: 5px;
+	transition: all 0.3s;
+	letter-spacing: 1px;
+}
+
+button:hover,
+button:active {
+	background-color: #203a43;
+	color: #fff;
+}
+
+footer {
+	font-size: 1.1rem;
+	margin: 2rem 0;
+	color: #203a43;
+}
+
+@media (max-width: 600px) {
+	#cElement {
+		width: 95%;
+	}
+}
